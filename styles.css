@@ -1,0 +1,132 @@
+body {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#calculator {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#history {
+    max-height: 100px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#history h3 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.number {
+    background-color: #e0e0e0;
+}
+
+.operator {
+    background-color: #f8a93c;
+    color: white;
+}
+
+.equals {
+    background-color: #4caf50;
+    color: white;
+}
+
+.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+#theme-toggle {
+    font-size: 20px;
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* Tumma teema */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme #calculator {
+    background-color: #222;
+    border-color: #444;
+}
+
+body.dark-theme #history {
+    background-color: #444;
+}
+
+body.dark-theme #display {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+}
+
+body.dark-theme .number {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-theme .operator {
+    background-color: #ff9800;
+}
+
+body.dark-theme .equals {
+    background-color: #4caf50;
+}
+
+body.dark-theme .clear {
+    background-color: #f44336;
+}
